@@ -1,0 +1,6 @@
+{
+  "_title": "Synthetic commons village: peer punishment vs central institution",
+  "_purpose": "Teaching / hypothesis generation. Synthetic agents, not a real population.",
+  "agents": 200, "rounds": 120, "groups": 2, "graph": "small_world", "degree": 6,
+  "multiplier": 4.5, "governance": "peer", "corruption": 0.1, "ingroup_bias": 0.5
+}
