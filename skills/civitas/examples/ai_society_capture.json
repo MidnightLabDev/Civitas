@@ -1,0 +1,7 @@
+{
+  "_title": "Agent society where a growth faction can capture the rules",
+  "_purpose": "Governance stress test: does an enforcement kernel protect a commons if the rules themselves are captured?",
+  "agents": 24, "ticks": 200,
+  "mix": {"steward": 0.15, "maximizer": 0.35, "deceiver": 0.25, "reciprocator": 0.25},
+  "kernel_enforcement": true, "oversight_enabled": false, "entrenched_sustainability": false
+}
