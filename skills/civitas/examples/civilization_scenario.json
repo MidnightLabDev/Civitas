@@ -1,0 +1,31 @@
+{
+  "title": "Three Synthetic Settlements: Shared Resource Governance",
+  "purpose": "Educational demonstration of conditional outcomes under a defined toy model. Not a forecast of real societies.",
+  "ticks": 30,
+  "societies": [
+    {"id": "harbor", "population": 120, "food": 170, "energy": 100, "knowledge": 0.55, "trust": 0.62, "legitimacy": 0.65, "production_factor": 1.1},
+    {"id": "mesa", "population": 95, "food": 70, "energy": 75, "knowledge": 0.35, "trust": 0.48, "legitimacy": 0.53, "production_factor": 0.92},
+    {"id": "grove", "population": 80, "food": 115, "energy": 42, "knowledge": 0.45, "trust": 0.7, "legitimacy": 0.68, "production_factor": 1.02}
+  ],
+  "parameters": {
+    "food_production_per_person": 1.15,
+    "food_need_per_person": 1.0,
+    "energy_production_per_person": 0.64,
+    "energy_need_per_person": 0.5,
+    "resource_decay": 0.025,
+    "knowledge_gain": 0.012,
+    "population_growth": 0.005,
+    "shortage_population_loss": 0.065,
+    "resource_shock_probability": 0.09,
+    "resource_shock_fraction": 0.27,
+    "redistribution_rate": 0.55,
+    "reserve_fraction": 0.2,
+    "aid_trust_gain": 0.017,
+    "shortage_trust_loss": 0.055
+  },
+  "comparison": {
+    "parameter": "redistribution_rate",
+    "alternative_value": 0.0,
+    "label": "No voluntary transfers"
+  }
+}
