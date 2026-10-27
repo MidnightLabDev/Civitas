@@ -21,5 +21,9 @@
     "psychohistory"
   ],
   "repository": "https://github.com/MidnightLabDev/Civitas",
-  "homepage": "https://github.com/MidnightLabDev/Civitas"
+  "homepage": "https://github.com/MidnightLabDev/Civitas",
+  "documentationUrl": "https://github.com/MidnightLabDev/Civitas#readme",
+  "supportUrl": "https://github.com/MidnightLabDev/Civitas/issues",
+  "privacyPolicyUrl": "https://github.com/MidnightLabDev/Civitas/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/MidnightLabDev/Civitas/blob/main/TERMS.md"
 }
