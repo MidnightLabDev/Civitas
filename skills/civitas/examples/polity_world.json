@@ -1,0 +1,4 @@
+{
+  "_title": "Twelve founding polities on a 24x24 torus",
+  "width": 24, "height": 24, "ticks": 300, "initial_polities": 12, "reach": 4.0, "alliances": true
+}
