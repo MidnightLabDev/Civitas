@@ -2,7 +2,7 @@
   "name": "civitas-psychohistory",
   "displayName": "CIVITAS 1.0: Psychohistory & Civilization Intelligence",
   "version": "1.0",
-  "description": "An Asimov-inspired framework for analyzing, modeling, simulating and stress-testing societies, institutions, economies, technologies and AI agent societies, with explicit evidence tiers and built-in stdlib-Python simulators. A disciplined foresight tool, not a claim that history can be predicted.",
+  "description": "A psychohistory framework inspired by Isaac Asimov's Foundation for analyzing, modeling, simulating and stress-testing societies, institutions, economies, technologies and AI agent societies, with explicit evidence tiers and built-in stdlib-Python simulators. Disciplined foresight, not a claim that history can be predicted.",
   "author": {
     "name": "Mayas Ötegen"
   },
