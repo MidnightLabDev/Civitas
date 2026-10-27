@@ -1,0 +1,13 @@
+{
+  "_title": "AI platform adoption loops (hypothesis map)",
+  "edges": [
+    {"from": "users", "to": "data", "sign": "+", "evidence": "estimate"},
+    {"from": "data", "to": "model quality", "sign": "+", "evidence": "estimate"},
+    {"from": "model quality", "to": "users", "sign": "+", "evidence": "assumed"},
+    {"from": "users", "to": "compute cost", "sign": "+", "evidence": "established"},
+    {"from": "compute cost", "to": "price", "sign": "+", "delay": true, "evidence": "estimate"},
+    {"from": "price", "to": "users", "sign": "-", "evidence": "established"},
+    {"from": "users", "to": "regulatory attention", "sign": "+", "delay": true, "evidence": "assumed"},
+    {"from": "regulatory attention", "to": "model quality", "sign": "-", "evidence": "speculative"}
+  ]
+}
