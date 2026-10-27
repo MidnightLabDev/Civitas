@@ -1,0 +1,25 @@
+{
+  "name": "civitas",
+  "displayName": "CIVITAS 1.0: Psychohistory & Civilization Intelligence",
+  "version": "1.0",
+  "description": "An Asimov-inspired framework for analyzing, modeling, simulating and stress-testing societies, institutions, economies, technologies and AI agent societies, with explicit evidence tiers and built-in stdlib-Python simulators. A disciplined foresight tool, not a claim that history can be predicted.",
+  "author": {
+    "name": "Mayas Ötegen"
+  },
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
+  "keywords": [
+    "foresight",
+    "cliodynamics",
+    "simulation",
+    "forecasting",
+    "ai-governance",
+    "multi-agent",
+    "systems-thinking",
+    "worldbuilding",
+    "asimov",
+    "psychohistory"
+  ],
+  "repository": "https://github.com/MidnightLabDev/Civitas",
+  "homepage": "https://github.com/MidnightLabDev/Civitas"
+}
