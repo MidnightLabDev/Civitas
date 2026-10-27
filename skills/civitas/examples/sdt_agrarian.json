@@ -1,0 +1,5 @@
+{
+  "_title": "Stylised agrarian state, 600 years",
+  "_purpose": "Explore how population pressure, elite overproduction and fiscal strain interact in a toy SDT model.",
+  "years": 600, "pop_growth": 0.015, "capacity_growth": 0.001, "elite_tax": 0.0, "fiscal_discipline": 0.0
+}
