@@ -1,0 +1,10 @@
+{
+  "_title": "Why did the fictional Republic of Veyra's grain market seize up?",
+  "hypotheses": ["harvest failure", "speculative hoarding", "transport collapse"],
+  "evidence": [
+    {"item": "Rainfall records normal", "weight": 0.9, "ratings": {"harvest failure": "II", "speculative hoarding": "N", "transport collapse": "N"}},
+    {"item": "Warehouse stocks at record high", "weight": 0.7, "ratings": {"harvest failure": "I", "speculative hoarding": "CC", "transport collapse": "C"}},
+    {"item": "Prices rose everywhere at once", "weight": 0.6, "ratings": {"harvest failure": "C", "speculative hoarding": "C", "transport collapse": "I"}},
+    {"item": "Bread is expensive", "weight": 1.0, "ratings": {"harvest failure": "C", "speculative hoarding": "C", "transport collapse": "C"}}
+  ]
+}
