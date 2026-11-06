@@ -41,7 +41,7 @@ Distinguish recorded sources, historical interpretations, uncertain chronology, 
 
 ## Simulation-assisted worldbuilding (1.0)
 
-1. Run `python scripts/civitas.py run polity --config examples/polity_world.json --runs 1 --output world.json`.
+1. With the CIVITAS full edition, run `python scripts/civitas.py run polity --config examples/polity_world.json --runs 1 --output world.json`. Without it, reason through the same expansion, solidarity and overstretch rules from the `polity` model card and label the result as scenario reasoning.
 2. Read the trajectory: peaks in `largest_share` are imperial eras, drops are fragmentations, rising `polities` counts are warring-states periods.
 3. Optionally run `sdt` for the dominant polity's internal cycle and `knowledge` for what each fragmentation loses.
 4. Narrate eras with ordinary lives, factions and dissent; keep a persistence record: era, polities, institutions, technologies, lost knowledge, open conflicts.

@@ -81,7 +81,7 @@ Each card answers five questions: **Proposed** (what Asimov imagined), **Analogu
 - Analogue: neural networks; mechanistic interpretability; behavioural evaluations and red-teaming.
 - Evidence: interpretability is an active field with partial results [E2]; behavioural evals remain the main safety tool.
 - Limits: no current method certifies a model's values.
-- Method: **behaviour-first evaluation**: test suites, adversarial cases, incident logs (evals/ in this package).
+- Method: **behaviour-first evaluation**: test suites, adversarial cases, incident logs (evals/ in the CIVITAS full edition).
 
 **10. Multivac and the Machines** ("The Evitable Conflict", 1950; "Franchise", 1955; "The Last Question", 1956)
 - Proposed: machines quietly manage the world economy, nudging away opposition; an election decided by questioning one statistically chosen citizen.

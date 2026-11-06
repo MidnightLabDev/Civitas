@@ -59,7 +59,7 @@ A CIVITAS scenario report should contain: `question`, `time_horizon`, `system_bo
 
 ## Simulator configuration
 
-See the shipped `examples/civilization_scenario.json`, which includes fictional starting conditions, parameter values, and a policy comparison. The Python script validates this schema at runtime and refuses nonsensical values. Its numeric model is an explicit demonstration, not a claim about historical society.
+See `examples/civilization_scenario.json` in the CIVITAS full edition, which includes fictional starting conditions, parameter values, and a policy comparison. The Python script validates this schema at runtime and refuses nonsensical values. Its numeric model is an explicit demonstration, not a claim about historical society.
 
 ## civlab result envelope (all models)
 

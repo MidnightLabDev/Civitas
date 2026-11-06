@@ -1,5 +1,7 @@
 # civlab simulators | model cards, parameters, outputs, commands
 
+> **Edition note:** the commands below refer to the CIVITAS full edition (the `full` branch and the v1.0-full release of github.com/MidnightLabDev/Civitas). This directory edition contains no scripts: use these cards to reason about and design experiments, and never report a run as executed.
+
 ## Contents
 1. Common contract (all models)
 2. society: networked cooperation, institutions, legitimacy

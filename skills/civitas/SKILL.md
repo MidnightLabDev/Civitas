@@ -1,6 +1,6 @@
 ---
 name: civitas
-description: CIVITAS 1.0, an Asimov-inspired psychohistory and civilization intelligence framework. Analyzes, models, simulates, forecasts and stress-tests societies, institutions, economies, technologies, AI agent societies and fictional civilizations, with explicit evidence tiers and executable stdlib-Python simulators (agent-based cooperation and legitimacy, AI agent constitutions, structural-demographic stress, polity rise and fragmentation, diffusion, failure cascades, knowledge loss, early-warning signals, forecasting and sensitivity tools). Use for questions about civilizational growth or decline, collapse and resilience, AI governance, multi-agent society design, long-range or second-order consequences, strategic foresight, cliodynamics, Foundation or Three Laws concepts, worldbuilding, game economies, or turning a speculative claim into a testable model.
+description: CIVITAS 1.0, an Asimov-inspired psychohistory and civilization intelligence framework. Analyzes, models, simulates, forecasts and stress-tests societies, institutions, economies, technologies, AI agent societies and fictional civilizations, with explicit evidence tiers and documented simulation models (agent-based cooperation and legitimacy, AI agent constitutions, structural-demographic stress, polity rise and fragmentation, diffusion, failure cascades, knowledge loss, early-warning signals, forecasting and sensitivity tools); runnable Python versions ship in the separate full edition. Use for questions about civilizational growth or decline, collapse and resilience, AI governance, multi-agent society design, long-range or second-order consequences, strategic foresight, cliodynamics, Foundation or Three Laws concepts, worldbuilding, game economies, or turning a speculative claim into a testable model.
 ---
 
 # CIVITAS 1.0 | Psychohistory and Civilization Intelligence
@@ -12,7 +12,7 @@ CIVITAS turns Isaac Asimov's fictional psychohistory into a defensible practice:
 2. The six evidence tiers (non-negotiable)
 3. The CIVITAS Loop (reasoning engine)
 4. Modes
-5. Executable lab (civlab)
+5. Simulation models (civlab)
 6. Output rules and depth dial
 7. Critical review gate
 8. Safety and copyright
@@ -88,40 +88,25 @@ Pick one primary mode. Workflows for each: [references/MODE_GUIDES.md](reference
 
 Common chains: HISTORY → MODEL → SIMULATE; FORECAST → STRESS → WARN; GOVERN → SIMULATE (`aisociety`) → AUDIT; WORLDBUILD → SIMULATE (`polity`, `sdt`) for consistent long histories.
 
-## 5. Executable lab (civlab)
+## 5. Simulation models (civlab)
 
-**When to run it:** only when the user asks for a simulation, code or numbers, or when a result would change the recommendation. For strategy, governance, history and design questions, reason directly and offer the relevant command in one line; toy runs that do not move the decision crowd out the analysis. When you do run, keep it to the few runs that answer the question. When the user asks you to *design* a simulation, deliver a full design whether or not you run it: agents and their state, decision rules, parameters with ranges, metrics, the experiments that would test the key claim, and how it would be validated.
+**This edition contains no executable code.** The model cards in [references/SIMULATORS.md](references/SIMULATORS.md) describe each civlab model: its agents, rules, parameters, metrics and documented behaviours. Use them to reason, design experiments and explain likely dynamics. Runnable Python versions of every model are in the CIVITAS full edition (the `full` branch and the v1.0-full release of github.com/MidnightLabDev/Civitas).
 
-Stdlib-only Python 3.9+, no installs, no network. **Run** these scripts; do not paste their code into context. Run from the skill folder. Model cards, parameters, and documented behaviours: [references/SIMULATORS.md](references/SIMULATORS.md).
-
-| Command | What it does |
+| Model | What it covers |
 |---|---|
-| `python scripts/civitas.py list` | Show all models and tools |
-| `run society` | Networked agents: public goods, peer punishment, central institutions, corruption, legitimacy, inequality, in-group bias |
-| `run aisociety` | Autonomous AI agents with goals, memory, reputation; constitution kernel, votes, audits, deception, human oversight freeze, entrenched clauses; pluggable policy (e.g. LLM) |
-| `run sdt` | Structural-demographic stress: wages, elite overproduction, fiscal distress, PSI-like composite, crisis episodes |
-| `run polity` | Civilization map: expansion, alliances, solidarity (asabiyyah), overstretch, fragmentation |
-| `run diffusion` | Bass curve (and fitting) or network threshold cascades with seeding and resisters |
-| `run cascade` | Load-redistribution failure cascades, targeted vs random, interdependent networks |
-| `run knowledge` | Tacit skill loss (Henrich) and archive redundancy with format obsolescence |
-| `ews` | Early-warning signals (variance, autocorrelation, surrogate test) on a CSV series |
-| `cld` | Causal loop analysis: loop polarity, delays, weakest evidence, leverage, Mermaid diagram |
-| `baserate`, `bayes`, `pool`, `score`, `ach` | Reference-class Beta posteriors, odds-form updating, logit pooling, Brier/log/Murphy scoring of a forecast ledger, competing-hypotheses matrix |
-| `compare`, `sensitivity`, `robust` | Seed-matched A/B, Morris or OAT sensitivity, minimax-regret policy choice over sampled futures |
+| `society` | Networked agents: public goods, peer punishment, central institutions, corruption, legitimacy, inequality, in-group bias |
+| `aisociety` | Autonomous AI agents with goals, memory, reputation; constitution kernel, votes, audits, deception, human oversight freeze, entrenched clauses |
+| `sdt` | Structural-demographic stress: wages, elite overproduction, fiscal distress, PSI-like composite, crisis episodes |
+| `polity` | Civilization map: expansion, alliances, solidarity (asabiyyah), overstretch, fragmentation |
+| `diffusion` | Bass curve or network threshold cascades with seeding and resisters |
+| `cascade` | Load-redistribution failure cascades, targeted vs random, interdependent networks |
+| `knowledge` | Tacit skill loss (Henrich) and archive redundancy with format obsolescence |
+| `ews` | Early-warning signals (variance, autocorrelation, surrogate test) on a time series |
+| `cld` | Causal loop analysis: loop polarity, delays, weakest evidence, leverage |
+| `baserate`, `bayes`, `pool`, `score`, `ach` | Reference-class posteriors, odds-form updating, logit pooling, forecast scoring, competing-hypotheses matrix |
+| `compare`, `sensitivity`, `robust` | Matched A/B comparison, sensitivity analysis, minimax-regret policy choice |
 
-Examples:
-```
-python scripts/civitas.py run society --config examples/society_commons.json --runs 10
-python scripts/civitas.py compare aisociety --config examples/ai_society_capture.json --alt entrenched_sustainability=true --runs 10
-python scripts/civitas.py sensitivity sdt --metric crisis_count --range pop_growth=0.005:0.02 --range elite_tax=0:0.8
-python scripts/civitas.py cld --config examples/cld_platform.json
-python -m unittest discover -s tests -v
-```
-The original aggregate teaching model remains: `python scripts/civitas_sim.py --config examples/civilization_scenario.json --runs 25 --compare`.
-
-**Self-checks:** `python scripts/lint_response.py answer.md` flags unsourced probabilities, certainty language, model-as-reality claims and future-dated citations in a long draft; `python scripts/validate_skill.py` checks the package; `evals/evals.json` holds 19 graded behavioural test cases.
-
-**Execution integrity:** report only runs that actually executed, with model, seeds, runs and config. Copy seeds, run counts and statistics from the actual output, use one consistent seed list throughout, and never quote a run you did not execute. If code execution is unavailable, present the experiment design and the command, and say it was not run. Fallback when no tools exist: reason with the same models verbally, label the outputs as scenario reasoning, and, if the user wants code, give the commands to run.
+**How to use them here:** reason with these models verbally and label the outcomes as scenario reasoning (E4, never E3, since nothing was run). Small calculations (a Bayes update, a Bass curve point, a Brier score) can be done by hand or with any code tool the environment provides; show the arithmetic. When the user asks you to *design* a simulation, deliver a full design: agents and their state, decision rules, parameters with ranges, metrics, the experiments that would test the key claim, and how it would be validated. When the user wants real runs, point them to the full edition and describe the experiment to run; never present a run, seed or statistic as executed.
 
 ## 6. Output rules and depth dial
 

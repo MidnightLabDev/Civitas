@@ -79,7 +79,7 @@ Bad output: "By year 15, 83 percent of businesses will be autonomous" without a 
 
 User: "Does a central sanctioning institution beat peer punishment for a commons village?"
 
-Command: `python scripts/civitas.py run society --config examples/society_commons.json --set governance=<g> --runs 10`
+Command (full edition): `python scripts/civitas.py run society --config examples/society_commons.json --set governance=<g> --runs 10`
 
 | Governance | Tail cooperation mean (p05-p95) | Final Gini mean | Final legitimacy |
 |---|---|---|---|
@@ -92,7 +92,7 @@ Good answer shape: "In this model [E3, synthetic], institutions of either kind s
 
 ## Example 5: Rule capture in an AI agent society (actual results)
 
-Command: `python scripts/civitas.py compare aisociety --config examples/ai_society_capture.json --alt entrenched_sustainability=true --runs 10`
+Command (full edition): `python scripts/civitas.py compare aisociety --config examples/ai_society_capture.json --alt entrenched_sustainability=true --runs 10`
 
 Baseline (kernel enforcement on, growth faction majority): final commons ratio 0.16, zero rule-violation incidents (the kernel blocked 2,796 over-harvest attempts per run on average), yet the commons was drained because the faction voted the cap up each period. Adding an entrenched sustainability clause raised the final commons ratio by 0.61 (Monte Carlo 95% interval 0.41 to 0.81), lowered Gini by 0.08 and hardship by 0.14 [E3].
 
