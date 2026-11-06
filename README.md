@@ -1,9 +1,7 @@
 # CIVITAS 1.0
 
 <p align="center">
-  <a href="https://github.com/MidnightLabDev/Civitas/raw/main/media/civitas-demo.mp4"><img src="media/civitas-demo-preview.gif" alt="CIVITAS demo: two simulated questions about a civilization, explained with bar charts" width="720"></a>
-  <br>
-  <a href="https://github.com/MidnightLabDev/Civitas/raw/main/media/civitas-demo.mp4"><b>▶ Watch the 1-minute narrated demo (with sound)</b></a>
+  <img src="media/civitas-demo-preview.gif" alt="CIVITAS demo: two simulated questions about a civilization, explained with bar charts" width="720">
 </p>
 
 An Asimov-inspired psychohistory and civilization intelligence skill for Claude. CIVITAS turns the idea of psychohistory into a defensible practice: understand a complex human or artificial system, map its mechanisms, explore its possible futures, test interventions, and say honestly how much is known. It is not a claim that history can be predicted.
